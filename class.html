@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and iFrame</title>
+    <style>
+        body{
+            background-color: #212121;
+            color:aliceblue;
+        }
+        .red{
+            background-color: firebrick;
+        }
+        #green{
+            background-color: darkcyan;
+        }
+        iframe{
+            border-radius: 20px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            /* to colllspse the border of individual cell we use this css property  */
+        }
+        td,th {
+            border: 1px solid #fff
+            ;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #848484;
+        }
+    </style>
+</head>
+<body>
+    <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas animi quisquam neque, accusamus suscipit quae facere magni aliquid asperiores?</p>
+    <p id="green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ut dignissimos aspernatur porro enim amet? Sunt rerum velit aliquam corporis.</p>
+
+    <!--According to good Convention:-
+    We should create multiple classes and with same name rather than creating multiple id's...every element should have a unique id but the classes can be same for any number of element-->
+
+    <!-- iFrame is used to enter a webpage inside a web page for eg:- a youtube video inside a webpage  -->
+     <table>
+        <tr>
+            <th>Title</th>
+            <td>Embedded Video</td>
+        </tr>
+        <tr>
+            <th>Javascript Chai Aur Code</th>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Hr5iLG7sUa0?si=wqgKBiftJlisqSlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <th>HTML Chai aur Code</th>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/-wMbf3qVNsc?si=PwmXAOVbO8CtU8AY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <th>Ranveer Allahbadia's Ofice</th>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/H75qY74tuyc?si=ZskC4FUPMCLyDYlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+        </tr>
+     </table>
+</body>
+</html>
