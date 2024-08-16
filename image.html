@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+    <title>Image tag</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/96422/pexels-photo-96422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="No image" width="600" >
+
+    <!-- There should be no space between Image names or it leads to error when uploading it on server -->
+
+    <!-- Picture tag is used instead of direct image tag because When we have to load multiple images on a website on a phone or different devices then we check the kind of browser is being used and all using the JS but this can be done using HTML CSS also
+     Therefore this picture tag is required use media attribute-->
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://images.pexels.com/photos/96422/pexels-photo-96422" />
+
+        <!-- When all these sources images are not visible or there is some problem then last img src is used. -->
+        <img src="https://images.pexels.com/photos/96422/pexels-photo-96422.jpeg?autcompress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="no image">
+    </picture>
+    <pre>
+        Image tag is very useful as we can generate Image maps.
+        Now what is Image maps?
+        Image maps are used to select any specific part of your image and we can chhose what happens when the user clicks that part.
+    </pre>
+
+    <img src="./Pexels.jpg" width="400px" usemap="#image-map">
+
+            <!-- TO make an image map you can use any website available online -->
+            
+<map name="image-map">
+    <area onclick = "one()" target="" alt="" title="" href="" coords="1911,8,2,644" shape="rect">
+    <area onclick = "two()" target="" alt="" title="" href="" coords="9,657,1903,1073" shape="rect">
+</map>
+        
+</body>
+<script>
+    function one(){
+        alert("Area One Clicked");
+    }
+    function two(){
+        alert("Area Two Clicked");
+    }
+</script>
+</html>
