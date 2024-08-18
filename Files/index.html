@@ -27,6 +27,21 @@
         <label for="pw">Password</label>
         <input type="password" name="pw" id="pw" required minlength="2">
       </div>
+      <div>
+        <label for="booking_location">Booking Location</label>
+        <input list="locations" name="pw" id="booking_location" required minlength="2">
+        <datalist id="locations">
+          <option value="Mall_Road"></option>
+          <option value="Z-Square"></option>
+          <option value="PVR_Deep">PVR_Deep</option>
+          <option value="Mocha">Mocha</option>
+        </datalist>
+      </div>
+      <div>
+        <label for="booking_number">Number of people</label>
+        <input type="range" name="Booking_number" id="booking_number" required min="1" max="10" value="4" oninput="this.nextElementSibling.value=this.value">
+        <output>4</output>
+      </div>
       <input type="submit" value="Log In">
     </form>
   </main>
