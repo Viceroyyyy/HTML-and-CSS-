@@ -1,0 +1,33 @@
+.container{
+    display: inline-flex; /*Flexbox applied to a line */
+    flex: 0 1 300px;
+    /* 
+
+    This shorthand for the flex-grow, flex-shrink, and flex-basis properties controls the sizing behavior of the flex item.
+    0: The flex item will not grow to fill the container.
+    1: The flex item can shrink if necessary.
+    300px: The initial width of the flex item. 
+
+    */
+
+    border-radius: 10px; /* Rounding of the borders */
+    border: 1px solid #ccc;
+     overflow: hidden; /* Clips the content and the clipped content remains hidden  */
+     justify-content: flex-end;
+    float:right
+}
+.icon{
+    padding: 0.8rem;
+}
+.searchBox{
+    border: 0;
+    flex: 1;
+}
+
+.searchButton{
+    color: white;
+    background: #0f4a8a;
+    border: 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
