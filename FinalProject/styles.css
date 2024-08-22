@@ -12,7 +12,7 @@ header img{
     width: 100px;
     height: 200px;
     margin:auto;
-    padding: 30px;
+    padding: 20px;
 }
 ul{
     display:flex;
@@ -64,6 +64,13 @@ ul a{
     background-color: blanchedalmond;
     border-radius: 10px;
     padding: 10px;
+}
+#articles img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
 }
 #articles h1{
     font-family: "Monotype Corsiva";
