@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #f0fff0;
+    margin: 2%;
+    
+}
+header img{
+    display:block;
+    width: 100px;
+    height: 200px;
+    margin:auto;
+    padding: 30px;
+}
+ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgb(138, 82, 82);
+    border-radius: 10px;
+    color:aliceblue;
+   
+}
+
+ul li {
+    padding: 15px ;
+    margin: auto;
+}
+ul a{
+    color:aliceblue
+}
+
+#promoBanner{
+    display: flex;
+    background: url("https://images.unsplash.com/photo-1460533893735-45cea2212645?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    border-radius: 10px;
+     padding: 20px; /* for the text inside this flexbox */
+    flex-direction: column; /* To display the text columnwise in  flexbox */
+    gap: 25px; /* For making a gap between the h1 and the paragraph element */
+    color:aliceblue; /* For changing the colour of the text inside the flexbox*/
+    margin-top: 30px;
+}
+
+#promoBanner h1,#promoBanner p{
+    background-color: #8e6c598c;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+
+#articles{
+    display: flex;
+    flex: 1 1 auto;
+    margin-top: 30px;
+    gap: 10px;
+    
+}
+
+#articles article{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 10px;
+}
+#articles h1{
+    font-family: "Monotype Corsiva";
+}
+#articles p{
+    padding-top: 10px;
+    text-align: justify;
+}
+img{
+    height: 80px;
+    width: 40px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+footer div{
+    flex:1;
+}
+footer p{
+    border-top: 1px solid #bd7070;
+    color: #bd7070;
+    font-size:larger;
+    text-align: right;
+}
