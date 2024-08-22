@@ -33,7 +33,7 @@
 /* Add rules for steps 8 and 9 */
 .letters > p:nth-child(even):hover{
 	transform: rotateY(360deg);
-	transition: 0.5s;
+	transition: 1s;
 }
 
 /* Add rules for steps 10 and 11 */
